@@ -1,0 +1,1555 @@
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  #scrollBtn:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+
+.color-item {
+    transition: all 0.4s linear;
+}
+.color-item:hover {
+    transform: scale(1.2,1.2);
+}
+
+
+.section {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0a0a0a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    background-color: #0a0a0a;
+    padding: 33px 0 32px;
+    color: #717171;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.phone {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+    padding-left: 400px;
+    font-size: 16px;
+}
+
+.menu-link {
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.menu-item {
+    padding-right: 30px;
+}
+
+.phone:hover,
+.footer-link:hover,
+.phone-two:hover,
+.menu-item:hover {
+    color: #f5f5f7;
+    transition: 0.5s ease;
+}
+
+.headline {
+    background-color: #f5f5f7;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    color: #490e84;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 77px;
+
+}
+
+.headline-btn {
+    margin-top: 40px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #490e84;
+    padding: 22px 70px 19px;
+    border-radius: 30px;
+}
+
+.headline-btn:hover {
+    background-color: #574b63;
+    transition: 0.5s ease;
+}
+
+.new-title,
+.color-title {
+    margin: 0 0 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #717171;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+.new-info {
+    display: flex;
+}
+
+.new-text {
+    text-align: center;
+}
+
+.new-text p {
+    max-width: 560px;
+    margin: 0 0 30px;
+}
+
+.images-new {
+    padding-left: 100px;
+    width: auto;
+    height: 350px;
+    padding-top: 50px;
+}
+
+.new-text b {
+    max-width: 560px;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+}
+
+.color {
+    padding-bottom: 150px;
+}
+
+.color-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.color-item img {
+    margin-bottom: 20px;
+}
+
+.color-item h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+
+.color-item p {
+    margin: 0;
+}
+
+.contacts {
+    padding-right: 250px;
+}
+
+input {
+    outline: none;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+}
+
+.contacts-inner {
+
+    display: flex;
+    background-color: #574b63;
+
+
+    color: #fff;
+}
+
+.contacts-form {
+    width: 100%;
+    padding: 140px 100px;
+    text-align: center;
+}
+
+.contacts-title {
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 39;
+    text-align: left;
+}
+
+.contact-input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574b63;
+    color: #fff;
+}
+
+.contact-input::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    opacity: .5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.contacts-form p {
+    opacity: .5;
+    text-align: center;
+}
+
+.contacts-form button {
+    border: none;
+    text-transform: uppercase;
+    color: #490e84;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 16px 81px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.headline-button {
+    margin-top: 40px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #490e84;
+    padding: 22px 70px 19px;
+    border-radius: 30px;
+}
+
+.headline-button:hover {
+    background-color: #9da0a3;
+    transition: 0.5s ease;
+}
+
+/* footer */
+
+.footer {
+    background-color: #0a0a0a;
+}
+
+.footer-link {
+    padding-left: 280px;
+}
+
+.footer-inner {
+    color: #717171;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* namber phone*/
+
+.phone-two {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+    padding-left: 850px;
+}
+
+/* iphone photo*/
+
+.iphone {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1775px) {
+    .phone {
+        position: absolute;
+        margin-left: 340px;
+    }
+}
+
+@media (max-width: 1739px) {
+    .phone {
+        position: absolute;
+        margin-left: 350px;
+    }
+
+    .menu {
+        position: absolute;
+        margin-left: -5px;
+    }
+}
+
+@media (max-width: 1731px) {
+    .phone {
+        position: absolute;
+        margin-left: 330px;
+    }
+
+    .headline-img {
+        margin-left: -30px;
+    }
+
+    .menu {
+        position: absolute;
+        margin-left: -20px;
+    }
+
+    .footer-link {
+        position: absolute;
+        margin-left: 100px;
+    }
+
+    .phone-two {
+        margin-left: 450px;
+    }
+}
+
+@media (max-width: 1703px) {
+    .phone {
+        position: absolute;
+        margin-left: 330px;
+    }
+
+    .headline-img {
+        margin-left: -30px;
+    }
+}
+
+@media (max-width: 1688px) {
+    .phone {
+        padding-left: 400px;
+        white-space: nowrap;
+    }
+
+    .menu {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1368px) {
+    .menu-item {
+        margin-left: -20px;
+    }
+
+    .phone {
+        padding-left: 300px;
+    }
+
+    .headline-img {
+        margin-left: -100px;
+    }
+
+    .images-new {
+        display: none;
+    }
+
+    .new-text {
+        margin-left: 50px;
+    }
+
+    .contacts-inner {
+        margin-left: -120px;
+    }
+
+    .footer-link {
+        margin-left: -100px;
+    }
+
+    .phone-two {
+        position: absolute;
+        margin-left: 240px;
+    }
+}
+
+@media (max-width: 1342px) {
+    .footer {
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .logo-img-two {
+        margin-top: 20px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        width: 1280px;
+    }
+
+    .phone {
+        margin-left: 500px;
+    }
+
+    .title {
+        margin-left: 200px;
+    }
+
+    .headline-img {
+        margin-left: 85px;
+        height: 500px;
+        width: auto;
+    }
+
+    .headline-btn {
+        margin-left: 220px;
+    }
+
+    .menu-item {
+        padding-left: 20px;
+    }
+
+    .menu {
+        margin-left: -100px;
+    }
+
+    .container {
+        margin-left: 200px;
+    }
+
+    .new-title {
+        margin-left: 220px;
+    }
+
+    .new-text {
+        margin-left: 200px;
+    }
+
+    .color-title,
+    .color-list {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 1165px) {
+    .phone {
+        padding-left: 150px;
+    }
+
+    .headline img {
+        margin-left: 35px;
+    }
+
+    .phone-two {
+        padding-left: 700px;
+    }
+
+    .footer-link {
+        padding-left: 180px;
+    }
+
+    .contacts-inner {
+        margin-left: -175px;
+    }
+}
+
+@media (max-width: 1161px) {
+    .phone {
+        padding-left: 190px;
+    }
+
+    .headline img {
+        margin-left: 35px;
+    }
+
+    .phone-two {
+        padding-left: 700px;
+    }
+
+    .footer-link {
+        padding-left: 200px;
+    }
+
+    .contacts-inner {
+        margin-left: -180px;
+    }
+}
+
+@media (max-width: 1117px) {
+    .contacts-inner {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 1101px) {
+    .contacts-inner {
+        margin-left: -208px;
+    }
+}
+
+@media (max-width: 1069px) {
+    .contacts-inner {
+        margin-left: -220px;
+    }
+
+    .phone-two {
+        padding-left: 600px;
+    }
+
+    .phone {
+        padding-left: 50px;
+    }
+
+    .headline img {
+        margin-left: -2vh;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-left: 120px;
+    }
+
+    .headline-btn {
+        margin-left: 120px;
+    }
+
+    .new-title {
+        margin-left: 120px;
+    }
+
+    .new-text {
+        margin-left: 120px;
+    }
+
+    .color-title {
+        margin-left: 120px;
+    }
+
+    .color-list {
+        margin-left: 120px;
+    }
+}
+
+@media (max-height: 1024px) {
+    .logo-img-two {
+        height: 30px;
+    }
+
+    .menu {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 975px) {
+    .menu {
+        margin-left: -150px;
+    }
+
+    .title {
+        text-align: center;
+        display: flex;
+    }
+
+    .headline img {
+        margin-left: -50px;
+    }
+
+    .headline-btn {
+        margin-left: 90px;
+    }
+
+    .new-title {
+        margin-left: 90px;
+    }
+
+    .new-info {
+        margin-left: -30px;
+    }
+
+    .color-title {
+        margin-left: 90px;
+    }
+
+    .color-list {
+        margin-left: 70px;
+    }
+
+    .footer-link {
+        margin-left: -150px;
+    }
+
+    .phone-two {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 929px) {
+    .phone-two {
+        margin-left: 160px;
+    }
+
+    .phone {
+        margin-left: 420px;
+    }
+
+    .headline img {
+        margin-left: -70px;
+    }
+
+    .color-list {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 896px) {
+    .phone-two {
+        margin-left: 120px;
+    }
+
+    .color-item img {
+        width: 200px;
+    }
+
+    .title {
+        margin-left: 90px;
+    }
+
+    .headline img {
+        margin-left: -110px;
+    }
+
+    .headline-btn {
+        margin-left: 20px;
+    }
+
+    .new-title {
+        margin-left: 20px;
+    }
+
+    .new-text {
+        margin-left: 50px;
+    }
+
+    .color-title {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 853px) {
+    .menu {
+        margin-top: 70px;
+        display: block;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .phone {
+        margin-top: 70px;
+    }
+
+    .logo .logo-img {
+        margin-top: 70px;
+    }
+
+    .phone-two {
+        margin-left: 70px;
+    }
+
+    .title {
+        margin-left: 70px;
+    }
+
+    .headline img {
+        margin-left: -130px;
+    }
+
+    .color-list {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 836px) {
+    .phone {
+        margin-left: 370px;
+    }
+}
+
+@media (max-width: 800px) {
+    .phone {
+        margin-left: 330px;
+    }
+
+    .phone-two {
+        margin-left: 30px;
+    }
+
+    .title {
+        margin-left: 40px;
+    }
+
+    .headline img {
+        margin-left: -170px;
+    }
+
+    .color-list {
+        margin-left: -25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .iphone-one {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 764px) {
+    .phone-two {
+        margin-left: 0;
+    }
+
+    .iphone-one {
+        margin-left: -30px;
+    }
+
+    .headline img {
+        margin-left: -185px;
+    }
+
+    .title {
+        margin-left: 19px;
+    }
+
+    .headline-btn {
+        margin-left: -30px;
+    }
+
+    .new-title {
+        margin-left: -30px;
+    }
+
+    .new-text {
+        margin-left: -30px;
+    }
+
+    .color-title {
+        margin-left: -30px;
+    }
+
+    .color-list {
+        margin-left: -30px;
+    }
+
+    .phone {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 734px) {
+    .phone {
+        margin-left: 270px;
+    }
+
+    .headline img {
+        height: 440px;
+        width: auto;
+        margin-left: -155px;
+    }
+
+    .title {
+        margin-left: 0;
+    }
+
+    .color-item img {
+        width: 170px;
+    }
+
+    .color-list {
+        margin-left: -50px;
+    }
+
+    .phone-two {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 717px) {
+    .iphone-one {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 712px) {
+    .iphone-one {
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 682px) {
+    .menu {
+        margin-left: -180px;
+    }
+
+    .phone {
+        margin-left: 230px;
+    }
+
+    .headline img {
+        height: 440px;
+        width: auto;
+        margin-left: -187px;
+    }
+
+    .headline-btn {
+        margin-left: -90px;
+    }
+
+    .title {
+        margin-left: -20px;
+    }
+
+    .new-title {
+        margin-left: -90px;
+    }
+
+    .color-title {
+        margin-left: -90px;
+    }
+
+    .color-list {
+        margin-left: -90px;
+    }
+
+    .iphone-one {
+        margin-left: -50px;
+    }
+
+    .phone-two {
+        margin-left: -80px;
+    }
+
+    .contacts-form {
+        margin-left: -50px;
+    }
+
+    .footer-link {
+        width: 29px;
+        padding-bottom: 0%;
+    }
+}
+
+@media (max-width: 653px) {
+    .phone {
+        margin-left: 210px;
+    }
+
+    .headline img {
+        width: 580px;
+        height: auto;
+        margin-left: -170px;
+    }
+
+    .new-info {
+        margin-left: -90px;
+    }
+
+    .color-list {
+        margin-left: -100px;
+    }
+
+    .phone-two {
+        margin-left: -100px;
+    }
+
+    .footer-link {
+        margin-left: -170px;
+    }
+}
+
+@media (max-width: 648px) {
+    .phone {
+        margin-left: 200px;
+    }
+
+    .title {
+        font-size: 37px;
+    }
+
+    .headline img {
+        width: 600px;
+        height: auto;
+    }
+
+    .new-info {
+        margin-left: -70px;
+    }
+
+    .color-list {
+        margin-left: -100px;
+    }
+
+    .footer-link {
+        margin-left: -170px;
+    }
+
+    .phone-two {
+        margin-left: -100px;
+    }
+}
+
+@media (max-width: 629px) {
+    .phone {
+        margin-left: 180px;
+    }
+
+    .title {
+        margin-left: -30px;
+    }
+
+    .color-list img {
+        width: 100%;
+    }
+
+    .phone-two {
+        margin-left: -130px;
+    }
+
+    .headline img {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 607px) {
+    .menu-link {
+        font-size: 15px;
+    }
+
+    .phone {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 35px;
+        margin-left: -30px;
+    }
+
+    .headline img {
+        width: 500px;
+        height: auto;
+        margin-left: -160px;
+    }
+
+    .headline-btn {
+        margin-left: -100px;
+    }
+
+    .new-title {
+        margin-left: -100px;
+    }
+
+    .phone-two {
+        margin-left: -160px;
+    }
+}
+
+@media (max-width: 567px) {
+    .phone {
+        margin-left: 140px;
+    }
+
+    .title {
+        margin-left: -50px;
+    }
+
+    .headline img {
+        margin-left: -175px;
+    }
+
+    .headline-btn {
+        margin-left: -130px;
+    }
+
+    .new-title {
+        margin-left: -130px;
+    }
+
+    .new-info {
+        margin-left: -130px;
+    }
+
+    .color-title {
+        margin-left: -130px;
+    }
+
+    .color-list {
+        margin-left: -130px;
+    }
+
+    .iphone-one {
+        margin-left: -70px;
+    }
+
+    .phone-two {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 540px) {
+    .headline img {
+        margin-left: -190px;
+    }
+
+    .title {
+        margin-left: -70px;
+    }
+}
+
+@media (max-width: 536px) {
+    .phone {
+        margin-left: 120px;
+    }
+
+    .headline img {
+        margin-left: -197px;
+    }
+
+    .iphone-one {
+        margin-left: -80px;
+    }
+
+    .contacts-form {
+        margin-left: -70px;
+    }
+
+    .phone-two {
+        margin-left: -230px;
+    }
+}
+
+@media (max-width: 509px) {
+    .phone {
+        margin-left: 80px;
+    }
+
+    .headline img {
+        width: 450px;
+        margin-left: -180px;
+    }
+
+    .title {
+        margin-left: -80px;
+    }
+
+    .phone-two {
+        margin-left: -250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone {
+        margin-left: 65px;
+    }
+
+    .title {
+        margin-left: -100px;
+    }
+
+    .headline img {
+        margin-left: -200px;
+    }
+
+    .headline-btn {
+        margin-left: -180px;
+    }
+
+    .new-title {
+        margin-left: -180px;
+    }
+
+    .new-info {
+        margin-left: -170px;
+    }
+
+    .color-title {
+        margin-left: -180px;
+    }
+
+    .color-list {
+        margin-left: -180px;
+    }
+
+    .phone-two {
+        margin-left: -280px;
+    }
+
+    .iphone-one {
+        margin-left: -90px;
+    }
+}
+
+@media (max-width: 456px) {
+    .phone {
+        margin-left: 40px;
+    }
+
+    .title {
+        margin-left: -110px;
+    }
+
+    .headline img {
+        width: 420px;
+    }
+
+    .iphone-one {
+        display: none;
+    }
+
+    .contacts-inner {
+        width: 470px;
+    }
+
+    .contacts-form {
+        margin-left: -10px;
+    }
+
+    .phone-two {
+        margin-left: -300px;
+    }
+}
+
+@media (max-width: 430px) {
+    .phone {
+        margin-left: 20px;
+    }
+
+    .headline img {
+        margin-left: -220px;
+    }
+
+    .new-info {
+        margin-left: -130px;
+        width: 300px;
+    }
+
+    .phone-two {
+        margin-left: -330px;
+    }
+
+    .color-list {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 429px) {
+    .phone {
+        margin-left: 20px;
+    }
+
+    .headline img {
+        margin-left: -217px;
+    }
+
+    .new-text {
+        margin-left: -30px;
+        width: 400px;
+    }
+
+    .color-title {
+        margin-left: -220px;
+    }
+
+    .color-list {
+        margin-left: -220px;
+    }
+
+    .phone-two {
+        margin-left: -321px;
+    }
+
+    .footer-link {
+        margin-left: -190px;
+    }
+
+    .contacts-form {
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 414px) {
+    .phone {
+        margin-left: 0px;
+    }
+
+    .headline img {
+        width: 400px;
+    }
+
+    .new-title {
+        margin-left: -200px;
+    }
+
+    .new-text {
+        margin-left: -30px;
+    }
+
+    .phone-two {
+        margin-left: -330px;
+    }
+}
+
+@media (max-width: 413px) {
+    .menu {
+        margin-left: -200px;
+    }
+
+    .phone {
+        margin-left: 3px;
+    }
+
+    .title {
+        margin-left: -130px;
+    }
+
+    .headline img {
+        width: 400px;
+        margin-left: -224px;
+    }
+
+    .headline-btn {
+        margin-left: -220px;
+    }
+
+    .new-title {
+        margin-left: -220px;
+    }
+
+    .new-info {
+        margin-left: -180px;
+    }
+
+    .phone-two {
+        margin-left: -334px;
+    }
+}
+
+@media (max-width: 412px) {
+    .new-text {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 395px) {
+    .menu {
+        margin-left: -210px;
+    }
+
+    .phone {
+        margin-left: 0;
+    }
+
+    .title {
+        margin-left: -140px;
+    }
+
+    .headline img {
+        width: 390px;
+        margin-left: -225px;
+    }
+
+    .new-text {
+        margin-left: 43px;
+    }
+
+    .phone-two {
+        margin-left: -350px;
+    }
+
+    .contacts-form {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 384px) {
+    .phone-two {
+        margin-left: -360px;
+    }
+
+    .phone {
+        margin-left: -10px;
+    }
+
+    .new-text {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .phone {
+        margin-left: -20px;
+    }
+
+    .headline img {
+        height: 250px;
+        width: auto;
+        margin-bottom: 100px;
+        margin-left: -300px;
+    }
+
+    .headline-btn {
+        margin-left: -300px;
+    }
+
+    .phone-two {
+        margin-left: -370px;
+    }
+
+    .color-list {
+        margin-left: -240px;
+    }
+
+    .contacts-form {
+        margin-left: -70px;
+    }
+}
+
+@media (max-width: 374px) {
+    .phone {
+        margin-left: -20px;
+    }
+
+    .headline img {
+        width: 350px;
+        position: fixed;
+        margin-left: -280px;
+    }
+
+    .headline-btn {
+        margin-left: -220px;
+        margin-top: 290px;
+    }
+
+    .title {
+        margin-left: -155px;
+    }
+
+    .new-title {
+        margin-left: -230px;
+    }
+
+    .new-text {
+        margin-left: 0px;
+    }
+
+    .color-title {
+        margin-left: -240px;
+    }
+
+    .color-list {
+        margin-left: -240px;
+    }
+
+    .contacts-form {
+        margin-left: -40px;
+        width: 270px;
+    }
+
+    .headline-button {
+        margin-left: -10px;
+    }
+
+    .phone-two {
+        margin-left: -370px;
+    }
+}
+
+@media (max-width: 365px) {
+    .phone {
+        margin-left: -30px;
+    }
+
+    .title {
+        margin-left: -160px;
+    }
+
+    .headline img {
+        margin-left: -290px;
+    }
+
+    .headline-btn {
+        margin-left: -235px;
+    }
+
+    .phone-two {
+        margin-left: -380px;
+    }
+}
+
+@media (max-width: 360px) {
+    .phone {
+        margin-left: -40px;
+    }
+
+    .phone-two {
+        margin-left: -385px;
+    }
+}
+
+@media (max-width: 351px) {
+    .phone {
+        margin-left: -50px;
+    }
+
+    .headline img {
+        margin-left: -295px;
+    }
+
+    .new-info {
+        margin-left: -190px;
+    }
+
+    .color-title {
+        margin-left: -250px;
+    }
+
+    .phone-two {
+        margin-left: -390px;
+        margin-top: 10px;
+    }
+
+    .footer-link {
+        margin-left: -197px;
+    }
+}
+
+@media (max-width: 320px) {
+    .phone-two {
+        margin-left: -420px;
+    }
+
+    .logo-img-two {
+        margin-left: 10px;
+    }
+
+    .phone {
+        margin-left: -76px;
+    }
+
+    .title {
+        margin-left: -180px;
+    }
+
+    .headline img {
+        width: 300px;
+        height: auto;
+        margin-left: -280px;
+    }
+
+    .headline-btn {
+        margin-left: -245px;
+    }
+
+    .new-title {
+        margin-left: -250px;
+    }
+
+    .new-text {
+        margin-left: -30px;
+    }
+
+    .color-title {
+        width: 300px;
+        margin-left: -200px;
+    }
+
+    .color-list {
+        margin-left: -250px;
+    }
+
+    .contacts-form {
+        margin-left: -70px;
+    }
+}
